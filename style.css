@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://github.com/Nah-Null/Gallery/blob/main/well%20done.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #000000; /* สีที่ใช้เมื่อ hover */
+}
+button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #000000; /* สีที่ใช้เมื่อ hover */
+}
+.navbar-toggler {
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.carousel-indicators-conten{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        /* margin-right: 15%; */
+        margin-bottom: 1rem;
+        /* margin: auto; */
+        /* margin-left: 15%; */
+}
+
+
+/* connten */
+.row.mb0 {
+    background-color: rgb(251,156,251,0.5);
+    margin: auto;
+    width: 100%;
+  }
+  
+  .column.width-12 {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+  }
+  
+  .grid-item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  
+  .product-thumbnail {
+    margin-left: 2%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .product-thumbnail img {
+    width: 100%;
+    height: auto;
+    transition: transform 700ms ease-in-out;
+  }
+  
+  .product-thumbnail:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .overlay-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(199, 178, 153, 0.72);
+    opacity: 0;
+    transition: opacity 700ms ease-in-out;
+  }
+  
+  .product-thumbnail:hover .overlay-info {
+    opacity: 1;
+  }
+  
+  .overlay-info span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product-details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .product-title a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .product-title a:hover {
+    color: #C7B299; /* Hover color */
+  }
+  
+  .product-sub-title {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .price-overall span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #C7B299;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1000px) {
+    .grid-item {
+      flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid-item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-item {
+      flex: 1 1 100%; /* 1 item per row */
+    }
+  }
+  
+
+  h1{
+    padding: 5% 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
